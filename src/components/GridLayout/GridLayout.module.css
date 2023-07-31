@@ -1,0 +1,8 @@
+.gridLayout {
+  display: grid;
+  padding-left: var(--layout-page-margin);
+  padding-right: var(--layout-page-margin);
+  grid-template-columns: repeat(var(--layout-grid-columns), 1fr);
+  column-gap: var(--layout-grid-column-gap);
+  row-gap: var(--layout-grid-row-gap);
+}

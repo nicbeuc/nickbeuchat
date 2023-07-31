@@ -1,0 +1,29 @@
+.externalLink {
+  display: flex;
+  align-items: center;
+  column-gap: var(--spacing-02);
+}
+
+.externalLink svg {
+  will-change: transform;
+  transition: transform var(--duration-normal) ease, opacity var(--duration-normal) ease;
+}
+
+.linkText {
+  transition: opacity var(--duration-normal) ease;
+}
+
+@media (hover:hover) {
+  .externalLink svg {
+    opacity: .5;
+  }
+
+  .externalLink:hover svg {
+    transform: translate(2px, -2px);
+    opacity: 1;
+  }
+
+  .externalLink:hover .linkText {
+    opacity: .5;
+  }
+}

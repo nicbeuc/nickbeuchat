@@ -1,0 +1,20 @@
+.headerWrapper {
+  padding-top: var(--spacing-06);
+  padding-bottom: var(--spacing-06);
+}
+
+.logoWrapper {
+  grid-column: 1/7;
+}
+
+.logoWrapper h1 {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.linksWrapper {
+  display: flex;
+  justify-content: flex-end;
+  grid-column: 7/13;
+  column-gap: var(--spacing-06);
+}
