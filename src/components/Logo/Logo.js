@@ -25,7 +25,7 @@ export default function Logo() {
   return (
     <h1 className={`${styles.logo} ${logoIsSmushed ? styles.smushed : ''}`}>
       <Link href="/">
-        N<span>ick</span> B<span>euchat</span>
+        <span>N</span><span>ick</span> <span>B</span><span>euchat</span>
       </Link>
     </h1>
   )

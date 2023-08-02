@@ -2,9 +2,26 @@
   position: fixed;
   left: var(--layout-page-margin);
   font-weight: 400;
-  transition: font-weight 250ms ease;
 }
 
-.smushed {
-  font-weight: 600;
+.logo span:nth-of-type(odd) {
+  margin-left: 0ch;
+  transition: font-weight 250ms ease, margin-left 250ms ease;
+}
+
+.logo span:nth-of-type(even) {
+  transition: opacity 250ms ease, transform 250ms ease;
+}
+
+.smushed span:nth-of-type(even) {
+  opacity: 0;
+  /* transform: translateX(-20%); */
+}
+
+.smushed span:nth-of-type(odd) {
+  font-weight: 900;
+}
+
+.smushed span:nth-of-type(3) {
+  margin-left: -2.15ch;
 }
