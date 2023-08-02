@@ -1,5 +1,6 @@
 import GridLayout from "../GridLayout"
 import ExternalLink from "../ExternalLink"
+import Logo from "../Logo"
 
 import styles from './Header.module.css'
 import { LINKS } from "@/constants"
@@ -9,7 +10,7 @@ export default function Header() {
     <header className={styles.headerWrapper}>
       <GridLayout>
         <div className={styles.logoWrapper}>
-          <h1>Nick Beuchat</h1>
+          <Logo />
         </div>
         <div className={styles.linksWrapper}>
           <ExternalLink link={LINKS.email}>

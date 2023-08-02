@@ -1,0 +1,10 @@
+.logo {
+  position: fixed;
+  left: var(--layout-page-margin);
+  font-weight: 400;
+  transition: font-weight 250ms ease;
+}
+
+.smushed {
+  font-weight: 600;
+}
