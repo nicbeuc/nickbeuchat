@@ -1,23 +1,19 @@
 'use client'
 import { useState, useEffect } from 'react';
 import Link from "next/link";
+import { throttle } from 'lodash';
 
-import { debounce } from '@/helpers';
 import styles from './Logo.module.css'
 
 export default function Logo() {
   const [logoIsSmushed, setLogoIsSmushed] = useState(false);
 
   useEffect(() => {
-    const handleScroll = debounce(() => {
+    const handleScroll = throttle(() => {
       const scrollY = window.scrollY;
-      const scrollThreshold = 200;
-      if (scrollY >= scrollThreshold) {
-        setLogoIsSmushed(true);
-      } else {
-        setLogoIsSmushed(false);
-      }
-    }, 100);
+      const scrollThreshold = 50;
+      setLogoIsSmushed(scrollY >= scrollThreshold)
+    });
 
     window.addEventListener('scroll', handleScroll);
 
