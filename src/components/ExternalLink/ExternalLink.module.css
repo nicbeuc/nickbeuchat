@@ -7,6 +7,7 @@
 .externalLink svg {
   will-change: transform;
   transition: transform var(--duration-normal) ease, opacity var(--duration-normal) ease;
+  flex: 0 0 .9em;
 }
 
 .linkText {

@@ -8,22 +8,24 @@ import { LINKS } from "@/constants"
 export default function Header() {
   return (
     <header className={styles.headerWrapper}>
-      <GridLayout>
-        <div className={styles.logoWrapper}>
-          <Logo />
-        </div>
-        <div className={styles.linksWrapper}>
-          <ExternalLink link={LINKS.email}>
-            Email
-          </ExternalLink>
-          <ExternalLink link="#">
-            Resumé
-          </ExternalLink>
-          <ExternalLink link={LINKS.linkedIn}>
-            LinkedIn
-          </ExternalLink>
-        </div>
-      </GridLayout>
+      <div className={styles.logoWrapper}>
+        <Logo />
+      </div>
+      <div className={styles.link1Wrapper}>
+        <ExternalLink link={LINKS.email}>
+          Contact
+        </ExternalLink>
+      </div>
+      <div className={styles.link2Wrapper}>
+        <ExternalLink link="#">
+          Resumé
+        </ExternalLink>
+      </div>
+      <div className={styles.link3Wrapper}>
+        <ExternalLink link={LINKS.linkedIn}>
+          LinkedIn
+        </ExternalLink>
+      </div>
     </header>
   )
 }

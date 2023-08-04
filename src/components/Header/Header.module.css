@@ -1,19 +1,34 @@
 .headerWrapper {
   padding-top: var(--spacing-06);
   padding-bottom: var(--spacing-06);
+  display: grid;
+  grid-template-areas:
+    "logo logo . . . . link1 link1 link2 link2 link3 link3";
+  padding-left: var(--layout-page-margin);
+  padding-right: var(--layout-page-margin);
+  grid-template-columns: repeat(var(--layout-grid-columns), 1fr);
+  column-gap: var(--layout-grid-column-gap);
+  row-gap: var(--layout-grid-row-gap);
+  align-items: center;
 }
 
 .logoWrapper {
-  grid-column: 1/7;
+  grid-area: logo;
+  height: 100%;
 }
 
-.logoWrapper h1 {
-  font-size: 1rem;
+/* .headerWrapper a {
+  justify-self: end;
+} */
+
+.link1Wrapper {
+  grid-area: link1;
 }
 
-.linksWrapper {
-  display: flex;
-  justify-content: flex-end;
-  grid-column: 7/13;
-  column-gap: var(--spacing-06);
+.link2Wrapper {
+  grid-area: link2;
+}
+
+.link3Wrapper {
+  grid-area: link3;
 }
