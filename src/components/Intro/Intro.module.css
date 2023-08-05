@@ -1,0 +1,25 @@
+.introWrapper {
+  padding-top: var(--spacing-12);
+  display: grid;
+  grid-template-areas:
+    "text text text text . . assoc assoc . . . . ";
+  padding-left: var(--layout-page-margin);
+  padding-right: var(--layout-page-margin);
+  grid-template-columns: repeat(var(--layout-grid-columns), 1fr);
+  column-gap: var(--layout-grid-column-gap);
+  row-gap: var(--layout-grid-row-gap);
+  align-items: end;
+}
+
+.text {
+  grid-area: text;
+}
+
+.assoc {
+  grid-area: assoc;
+}
+
+.assocTitle {
+  font-size: 1rem;
+  margin-bottom: var(--spacing-04);
+}

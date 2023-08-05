@@ -47,7 +47,42 @@ body {
   overscroll-behavior: none;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 500;
+}
+
 a {
   text-decoration: none;
   color: inherit;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  position: relative;
+}
+
+li + li {
+  margin-top: var(--spacing-02);
+}
+
+li::before {
+  content: '';
+  position: absolute;
+  width: .25em;
+  height: .25em;
+  border-radius: .1em;
+  background: currentColor;
+  left: -1em;
+  top: 50%;
+  transform: translateY(-50%);
 }
