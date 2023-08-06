@@ -6,7 +6,7 @@
     "logo logo . . . . link1 link1 link2 link2 link3 link3";
   padding-left: var(--layout-page-margin);
   padding-right: var(--layout-page-margin);
-  grid-template-columns: repeat(var(--layout-grid-columns), 1fr);
+  grid-template-columns: repeat(var(--layout-grid-columns), minmax(0, 1fr));
   column-gap: var(--layout-grid-column-gap);
   row-gap: var(--layout-grid-row-gap);
   align-items: center;

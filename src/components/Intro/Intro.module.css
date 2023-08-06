@@ -3,12 +3,21 @@
   display: grid;
   grid-template-areas:
     "text text text text . . assoc assoc . . . . ";
-  padding-left: var(--layout-page-margin);
-  padding-right: var(--layout-page-margin);
-  grid-template-columns: repeat(var(--layout-grid-columns), 1fr);
+  margin-left: var(--layout-page-margin);
+  margin-right: var(--layout-page-margin);
+  grid-template-columns: repeat(var(--layout-grid-columns), minmax(0, 1fr));
   column-gap: var(--layout-grid-column-gap);
   row-gap: var(--layout-grid-row-gap);
   align-items: end;
+  padding-bottom: var(--spacing-08);
+  border-bottom: var(--border);
+}
+
+@media screen and (max-width: 62.5rem) {
+  .introWrapper {
+    grid-template-areas:
+      "text text text text assoc assoc"
+  }
 }
 
 .text {
@@ -20,6 +29,7 @@
 }
 
 .assocTitle {
-  font-size: 1rem;
+  font-size: var(--font-size-body);
   margin-bottom: var(--spacing-04);
+  color: var(--color-neutral-600);
 }
