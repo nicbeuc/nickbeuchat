@@ -4,6 +4,7 @@
   font-weight: 400;
   font-size: var(--font-size-body);
   width: fit-content;
+  mix-blend-mode: exclusion;
 }
 
 .logo span:nth-of-type(odd) {

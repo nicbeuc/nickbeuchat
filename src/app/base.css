@@ -27,7 +27,7 @@
   --duration-long: .65s;
 
   /* For text elements, do not use above 600 */
-  --color-neutral-00: hsl(240, 4%, 95%);
+  --color-neutral-1000: hsl(240, 4%, 95%);
   --color-neutral-900: hsl(237.77deg 2.43% 90.81%);
   --color-neutral-800: hsl(192.99deg 3.52% 72.85%);
   --color-neutral-700: hsl(193deg 2.64% 63.83%);
@@ -45,17 +45,21 @@
   --border: var(--border-width) solid var(--border-color);
 
   --font-size-body: .9rem;
+
+  --radius-sm: 2px;
+  --radius-md: 4px;
 }
 
 @media screen and (max-width: 62.5rem) {
   :root {
     --layout-grid-columns: 6;
+    --layout-page-margin: var(--spacing-06);
   }
 }
 
 html {
   font-size: 16px;
-  background-color: var(--color-neutral-1000);
+  /* background-color: var(--color-neutral-1000); */
 }
 
 *,

@@ -1,0 +1,11 @@
+.wrapper {
+  padding-top: var(--spacing-08);
+  margin-left: var(--layout-page-margin);
+  margin-right: var(--layout-page-margin);
+}
+
+.card {
+  min-height: 600px;
+  background-color: var(--color-neutral-800);
+  border-radius: var(--radius-md);
+}
