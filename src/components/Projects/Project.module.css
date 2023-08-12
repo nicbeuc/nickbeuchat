@@ -64,6 +64,7 @@
   background-color: var(--color-neutral-1000);
   border-radius: var(--radius-sm);
   font-size: var(--font-size-body-sm);
+  border: var(--border);
 }
 
 @media screen and (max-width: 62.5rem) {
