@@ -5,6 +5,7 @@
   font-size: var(--font-size-body);
   width: fit-content;
   mix-blend-mode: exclusion;
+  z-index: 100;
 }
 
 .logo span:nth-of-type(odd) {

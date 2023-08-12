@@ -1,12 +1,66 @@
+.wrapper {
+  position: relative;
+  isolation: isolate;
+}
+
 .imageWrapper {
-  aspect-ratio: 2/1;
+  aspect-ratio: 5/2;
   width: 100%;
   height: auto;
   position: relative;
+  overflow: hidden;
+  border-radius: var(--radius-md);
 }
 
 .imageWrapper img {
-  /* width: 100%;
-  height: 100%; */
   object-fit: cover;
+}
+
+.meta {
+  display: grid;
+  grid-template-areas: "title title title title . . . roles roles roles . date";
+  grid-template-columns: repeat(var(--layout-grid-columns), 1fr);
+  column-gap: var(--layout-grid-column-gap);
+  row-gap: var(--layout-grid-row-gap);
+  align-items: start;
+  margin-bottom: var(--spacing-06);
+}
+
+.title {
+  grid-area: title;
+}
+
+.title h2 {
+  margin-bottom: var(--spacing-03);
+}
+
+.title a::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.date {
+  grid-area: date;
+  justify-self: end;
+}
+
+.roles {
+  grid-area: roles;
+  color: var(--color-text-subtle);
+  display: flex;
+  gap: var(--spacing-03);
+  text-transform: capitalize;
+}
+
+.role {
+  padding: var(--spacing-02) var(--spacing-04);
+  background-color: var(--color-neutral-1000);
+  border-radius: 100vw;
 }

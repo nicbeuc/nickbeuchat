@@ -2,10 +2,10 @@
   padding-top: var(--spacing-12);
   display: grid;
   grid-template-areas:
-    "text text text text . . assoc assoc . . . . ";
+    "text text text text text text . assoc assoc . . .";
   margin-left: var(--layout-page-margin);
   margin-right: var(--layout-page-margin);
-  grid-template-columns: repeat(var(--layout-grid-columns), minmax(0, 1fr));
+  grid-template-columns: repeat(var(--layout-grid-columns), 1fr);
   column-gap: var(--layout-grid-column-gap);
   row-gap: var(--layout-grid-row-gap);
   align-items: end;
@@ -22,7 +22,8 @@
 
 .text {
   grid-area: text;
-  max-width: 52ch;
+  max-width: 72ch;
+  font-size: var(--font-size-body-lg);
 }
 
 .assoc {
@@ -32,5 +33,5 @@
 .assocTitle {
   font-size: var(--font-size-body);
   margin-bottom: var(--spacing-04);
-  color: var(--color-neutral-600);
+  color: var(--color-text-subtle);
 }

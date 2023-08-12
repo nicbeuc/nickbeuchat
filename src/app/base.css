@@ -40,11 +40,14 @@
   --color-neutral-50: hsl(192, 26%, 7%);
   --color-neutral-0: hsl(191, 48%, 5%);
 
+  --color-text-subtle: var(--color-neutral-600);
+
   --border-color: var(--color-neutral-900);
   --border-width: 1px;
   --border: var(--border-width) solid var(--border-color);
 
   --font-size-body: .9rem;
+  --font-size-body-lg: 1.25rem;
 
   --radius-sm: 2px;
   --radius-md: 4px;

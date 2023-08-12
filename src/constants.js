@@ -22,3 +22,24 @@ export const ASSOCIATIONS = [
 ]
 
 export const INTRO_TEXT = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.'
+
+export const FEATURED_PROJECTS = [
+  {
+    title: 'Dr. Noze Best',
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.',
+    year: '2023',
+    roles: ['design', 'development']
+  },
+  {
+    title: 'Shake Shack Store',
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.',
+    year: '2023',
+    roles: ['design', 'development']
+  },
+  {
+    title: 'Shop The Sims',
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.',
+    year: '2023',
+    roles: ['design', 'development']
+  },
+]

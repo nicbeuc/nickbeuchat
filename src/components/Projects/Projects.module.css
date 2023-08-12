@@ -4,6 +4,10 @@
   margin-right: var(--layout-page-margin);
 }
 
+.wrapper > * + * {
+  margin-top: var(--spacing-09);
+}
+
 .card {
   min-height: 600px;
   background-color: var(--color-neutral-800);
