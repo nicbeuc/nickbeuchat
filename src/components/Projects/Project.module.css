@@ -60,7 +60,16 @@
 }
 
 .role {
-  padding: var(--spacing-02) var(--spacing-04);
+  padding: var(--spacing-01) var(--spacing-03);
   background-color: var(--color-neutral-1000);
-  border-radius: 100vw;
+  border-radius: var(--radius-sm);
+  font-size: var(--font-size-body-sm);
+}
+
+@media screen and (max-width: 62.5rem) {
+  .meta {
+    grid-template-areas:
+      "title title title title title title"
+      "roles roles roles roles . date";
+  }
 }

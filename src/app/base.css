@@ -1,5 +1,43 @@
 /* Josh Comeau's CSS Reset */
-*,::after,::before{box-sizing:border-box}*{margin:0}body{line-height:1.5;-webkit-font-smoothing:antialiased}canvas,img,picture,svg,video{display:block;max-width:100%}button,input,select,textarea{font:inherit}h1,h2,h3,h4,h5,h6,p{overflow-wrap:break-word}#__next,#root{isolation:isolate}
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+}
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+canvas,
+img,
+picture,
+svg,
+video {
+  display: block;
+  max-width: 100%;
+}
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  overflow-wrap: break-word;
+}
+#__next,
+#root {
+  isolation: isolate;
+}
 
 /* Global styles */
 :root {
@@ -22,9 +60,9 @@
   --layout-grid-column-gap: var(--spacing-06);
   --layout-grid-row-gap: var(--spacing-06);
 
-  --duration-short: .15s;
-  --duration-normal: .25s;
-  --duration-long: .65s;
+  --duration-short: 0.15s;
+  --duration-normal: 0.25s;
+  --duration-long: 0.65s;
 
   /* For text elements, do not use above 600 */
   --color-neutral-1000: hsl(240, 4%, 95%);
@@ -46,7 +84,8 @@
   --border-width: 1px;
   --border: var(--border-width) solid var(--border-color);
 
-  --font-size-body: .9rem;
+  --font-size-body-sm: 0.75rem;
+  --font-size-body: 0.9rem;
   --font-size-body-lg: 1.25rem;
 
   --radius-sm: 2px;
@@ -93,6 +132,10 @@ h6 {
   font-weight: normal;
 }
 
+h2 {
+  font-weight: 500;
+}
+
 a {
   text-decoration: none;
   color: inherit;
@@ -114,11 +157,11 @@ li + li {
 
 li::before {
   display: none;
-  content: '';
+  content: "";
   position: absolute;
-  width: .25em;
-  height: .25em;
-  border-radius: .1em;
+  width: 0.25em;
+  height: 0.25em;
+  border-radius: 0.1em;
   background: var(--color-neutral-700);
   left: -1em;
   top: 50%;
