@@ -28,17 +28,17 @@
 
   /* For text elements, do not use above 600 */
   --color-neutral-1000: hsl(240, 4%, 95%);
-  --color-neutral-900: hsl(237.77deg 2.43% 90.81%);
-  --color-neutral-800: hsl(192.99deg 3.52% 72.85%);
-  --color-neutral-700: hsl(193deg 2.64% 63.83%);
-  --color-neutral-600: hsl(194.85deg 3.37% 46%);
-  --color-neutral-500: hsl(197.67deg 3.85% 36.74%);
-  --color-neutral-400: hsl(186.68deg 6.47% 26.23%);
-  --color-neutral-300: hsl(192.61deg 10.08% 18.99%);
-  --color-neutral-200: hsl(197.37deg 17.09% 12.52%);
-  --color-neutral-100: hsl(190.89deg 23.61% 9.3%);
-  --color-neutral-50: hsl(192.42deg 25.62% 7.58%);
-  --color-neutral-0: hsl(191.19deg 46.85% 4.62%);
+  --color-neutral-900: hsl(240, 2%, 91%);
+  --color-neutral-800: hsl(192, 4%, 73%);
+  --color-neutral-700: hsl(192, 3%, 64%);
+  --color-neutral-600: hsl(197, 3%, 46%);
+  --color-neutral-500: hsl(197, 4%, 37%);
+  --color-neutral-400: hsl(187, 6%, 26%);
+  --color-neutral-300: hsl(193, 9%, 19%);
+  --color-neutral-200: hsl(196, 17%, 12%);
+  --color-neutral-100: hsl(191, 23%, 9%);
+  --color-neutral-50: hsl(192, 26%, 7%);
+  --color-neutral-0: hsl(191, 48%, 5%);
 
   --border-color: var(--color-neutral-900);
   --border-width: 1px;
@@ -77,7 +77,7 @@ body {
   overflow-y: scroll;
   overscroll-behavior: none;
   line-height: 1.65;
-  color: var(--color-neutral-300);
+  color: var(--color-neutral-100);
   font-size: var(--font-size-body);
 }
 
@@ -123,6 +123,6 @@ li::before {
 }
 
 p {
-  color: var(--color-neutral-500);
+  /* color: var(--color-neutral-500); */
   line-height: 1.65;
 }
