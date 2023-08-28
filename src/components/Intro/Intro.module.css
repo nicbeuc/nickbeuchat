@@ -22,8 +22,8 @@
 
 .text {
   grid-area: text;
-  max-width: 72ch;
-  font-size: var(--font-size-body-lg);
+  max-width: 56ch;
+  font-size: var(--font-size-body);
 }
 
 .assoc {

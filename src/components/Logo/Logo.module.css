@@ -1,10 +1,11 @@
 .logo {
   position: fixed;
   left: var(--layout-page-margin);
-  font-weight: 400;
-  font-size: var(--font-size-body);
+  font-weight: 700;
+  font-size: var(--font-size-body-lg);
   width: fit-content;
   mix-blend-mode: exclusion;
+  letter-spacing: -.04ch;
   z-index: 100;
 }
 
