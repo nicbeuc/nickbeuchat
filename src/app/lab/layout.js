@@ -1,12 +1,9 @@
+import styles from './lab.module.css';
+
 export default function LabLayout({ children }) {
   return (
-    <main
-      style={{
-        border: '1px solid red'
-      }}
-      data-template
-    >
-      <div>
+    <main className={styles.main}>
+      <div className={styles.container}>
         {children}
       </div>
     </main>
